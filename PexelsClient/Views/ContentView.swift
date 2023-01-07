@@ -80,7 +80,7 @@ struct ContentView: View {
                         LazyVGrid(columns: columns,spacing: 12) {
                             ForEach(viewModel.videos){video in
                                 NavigationLink{
-                                    //                                     VideoPlayerVIew(videos: viewModel.videos)
+                                    VideoPlayerVIew(videos: viewModel.videos)
                                 }label: {
                                     VideoListItem(video: video)
                                 }.backgroundStyle(.red)
